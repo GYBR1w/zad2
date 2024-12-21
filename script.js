@@ -62,4 +62,26 @@ document.addEventListener('DOMContentLoaded', function() {
     slider.addEventListener('mouseleave', startAutoSlide);
 
     startAutoSlide();
+
+    // Модальное окно для изображений
+    const modal = document.getElementById("modal");
+    const modalImage = document.getElementById("modal-image");
+    const closeModal = document.getElementsByClassName("close")[0];
+
+    document.querySelectorAll('.clickable-image').forEach(image => {
+        image.addEventListener('click', function() {
+            modal.style.display = "block";
+            modalImage.src = this.src;
+        });
+    });
+
+    closeModal.addEventListener('click', function() {
+        modal.style.display = "none";
+    });
+
+    window.addEventListener('click', function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    });
 });

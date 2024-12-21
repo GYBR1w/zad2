@@ -12,13 +12,13 @@
             <div class="product-images-container">
                 <div class="product-images">
                     <div class="product-image">
-                        <img src="images/1.jpeg" alt="Строительные материалы - вид 1">
+                        <img src="images/1.jpeg" alt="Строительные материалы - вид 1" class="clickable-image">
                     </div>
                     <div class="product-image">
-                        <img src="images/2.jpeg" alt="Строительные материалы - вид 2">
+                        <img src="images/2.jpeg" alt="Строительные материалы - вид 2" class="clickable-image">
                     </div>
                     <div class="product-image">
-                        <img src="images/3.jpeg" alt="Строительные материалы - вид 3">
+                        <img src="images/3.jpeg" alt="Строительные материалы - вид 3" class="clickable-image">
                     </div>
                 </div>
                 <button class="slider-button slider-prev">❮</button>
@@ -53,11 +53,17 @@
                 <h2>Характеристики</h2>
                 <ul>
                     <li>Количество: 100 штук</li>
-                    <li>Материал: Сталь</ли>
+                    <li>Материал: Сталь</li>
                     <li>Тип: Саморезы с потайной головкой</li>
                 </ul>
             </div>
         </div>
+    </div>
+
+    <!-- Модальное окно для изображений -->
+    <div id="modal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modal-image">
     </div>
 
     <!-- Раздел с отзывами под галереей изображений -->
